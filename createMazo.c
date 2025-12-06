@@ -2,7 +2,7 @@
 
 int main(){
 
-    printf("Hello, World!\n"); //prueba de commit
+    printf("Hello, World!\n"); //prueba de commitx
 
     return 0;
 }

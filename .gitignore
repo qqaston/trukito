@@ -1,0 +1,24 @@
+# --- Archivos de compilación de C ---
+*.o
+*.obj
+
+# --- El Ejecutable (El juego) ---
+# En Windows suelen terminar en .exe
+*.exe
+# En Mac/Linux a veces no tienen extensión, pero por si acaso:
+*.out
+*.app
+
+# --- Carpetas de IDEs (Editores) ---
+# Si usas VS Code (muy probable)
+.vscode/
+
+# Si usas Visual Studio "grande"
+.vs/
+Debug/
+Release/
+x64/
+
+# --- Archivos de sistema ---
+.DS_Store
+Thumbs.db
