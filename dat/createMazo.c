@@ -1,19 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef enum {
-    ESPADAS,
-    BASTOS,
-    OROS,
-    COPAS
-} Palo;
-
-typedef struct {
-    int num;
-    Palo palo;
-    int jerarquia;
-    int puntos; 
-} carta;
+#include "include/common.h"
 
 FILE *archivoMazo;
 
@@ -35,7 +22,7 @@ void crearMazo(){
                 jerarquia = 13;
             }else if (palo == ESPADAS && num == 7) {
                 jerarquia = 12;
-            }else if (palo == OROS && num == 7) {
+            }else if (palo == OROS && num == 7){
                 jerarquia = 11;                
             }else if (num == 3) {
                 jerarquia = 10;
@@ -72,6 +59,7 @@ int main(){
 
     crearMazo();
     fclose(archivoMazo);
+    system("pause");
 
     return 0;
 }
