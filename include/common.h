@@ -13,6 +13,6 @@ typedef struct {
     Palo palo;
     int jerarquia;
     int puntos; 
-} carta;
+} tCarta;
 
 #endif // CEMMON_C
