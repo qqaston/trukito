@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "../include/common.h"
 #include "../include/mazo.h"
 #include <time.h>
@@ -33,7 +34,7 @@ void mezclarMazo(tMazo *pMazo) {
     srand(time(NULL));
     for (int i = 0; i < 40; i++){
         int j = rand() % 40;
-        tCarta temp = pMaza->cartas[i];
+        tCarta temp = pMazo->cartas[i];
         pMazo->cartas[i] = pMazo->cartas[j];
         pMazo->cartas[j] = temp;
     }

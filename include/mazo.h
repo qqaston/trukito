@@ -10,5 +10,8 @@ typedef struct {
 
 void extraerMazo(tMazo *pMazo);
 void verMazo(tMazo *pMazo);
+void mezclarMazo(tMazo *pMazo);
+int repartirMazo(tMazo *pMazo, tCarta *destino);
+
 
 #endif
